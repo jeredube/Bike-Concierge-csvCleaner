@@ -5,17 +5,6 @@ import pygame.freetype
 from pygame.locals import *
 import sys
 
-'''
-
-#################### BEFORE YOU RUN THE PROGRAM ####################
-
-Ensure that the undone file is titled "Contacts.csv" and saved as a
-CSV file - also ensure that the headers are properly placed in the 
-actual header area of the CSV file
-
-####################################################################
-
-'''
 
 def cleanData(file):
 
@@ -131,7 +120,11 @@ print('Final data chunking complete. ' + str(round(count/1000)) + ' files were c
 
 write_chunk(0, convertFilesToGoogle(cleanData('Contacts.csv')))
 
+
+
 '''
+Future Additions - Front End Design with a drag and drop file function
+
 pygame.init()
 
 fileFinal = 'lastFile.csv'
@@ -159,26 +152,4 @@ def main():
         pygame.display.update()
 
 main()
-'''
-
-
-
-
-
-'''
-
-######### Benefits of the Program #########
-
-    -Allows for quicker and better communication between mechanics/employees and customers
-    -The customers get quicker more personlized responses
-    -Each mechanic/employee saves about 15 minutes a day, and spared their annoyance at finding customers contacts
-     and with 10 mechanics working each week - my program has saved the business and its employers
-
-                    TIME SAVED CACLULATIONS
-
-    -480 hours a week - worked by 10 employees and the 2 owners
-    -15 mins * 12 employees * 7 days = 1260 minutes saved a week (21 hours a week)
-    -Total percentage saved (21/480) = 4.375% SAVED EACH WEEK
-
-
 '''
